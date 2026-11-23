@@ -1,0 +1,12 @@
+{
+  "cpu": 80,
+  "mem": 85,
+  "disk": 90,
+  "loss": 5,
+  "failed_logins": 10,
+  "ping_host": "8.8.8.8",
+  "firewall_zone": "public",
+  "firewall_timeout": "10m",
+  "protected_ips": ["127.0.0.1", "10.0.2.2"],
+  "expected_ports": [22, 2222, 80, 443, 445, 53, 123, 25]
+}

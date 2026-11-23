@@ -1,0 +1,6 @@
+2026-02-10T10:00:00+00:00 lab sshd[12]: Failed password for test from 192.0.2.5 port 1024 ssh2
+2026-02-10T10:01:00+00:00 lab sshd[13]: Failed password for test from 192.0.2.6 port 1025 ssh2
+2026-02-10T10:02:00+00:00 lab sshd[14]: Invalid user test from 192.0.2.5 port 1026
+2026-02-10T10:03:00+00:00 lab example: [error] denied /tmp/example-1 at 192.0.2.5
+2026-02-10T10:04:00+00:00 lab example: [error] denied /tmp/example-2 at 192.0.2.6
+bad record

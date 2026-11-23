@@ -1,0 +1,18 @@
+[Unit]
+Description=Admintool health
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=root
+WorkingDirectory=/opt/admintool
+LogsDirectory=admintool
+LogsDirectoryMode=0750
+Environment=ADMINTOOL_LOG_DIR=/var/log/admintool
+Environment=PYTHONDONTWRITEBYTECODE=1
+UMask=0027
+ExecStart=/usr/bin/bash /opt/admintool/bin/admintool.sh --health --audit
+SuccessExitStatus=1 2
+StandardOutput=append:/var/log/admintool/systemd.log
+StandardError=append:/var/log/admintool/systemd.log
